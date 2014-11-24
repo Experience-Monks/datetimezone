@@ -1,4 +1,15 @@
-timezonedate
-============
+#timezonedate
 
-Pass in a timezone offset in minutes and this function will return Date objects based on that Timezone
+Pass in an offset in minutes and this module will return a function which you can call to get a Date
+which is the current Date/Time in that timezone.
+
+**Example**  
+```javascript
+var timezoneDate = require( 'timezoneDate' ),
+    gmt = timezoneDate( 0 ),
+    eastern = timezoneDate( 300 );
+
+console.log( gmt() );
+console.log( eastern() );
+```
+
