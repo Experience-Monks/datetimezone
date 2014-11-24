@@ -5,7 +5,7 @@ which is the current Date/Time in that timezone.
 
 **Example**  
 ```javascript
-var timezoneDate = require( 'timezoneDate' ),
+var timezoneDate = require( 'timezonedate' ),
     gmt = timezoneDate( 0 ),
     eastern = timezoneDate( 300 );
 
